@@ -6,12 +6,12 @@
 
 Summary: HighLine is a high-level command-line IO library
 Name: rubygem-%{gemname}
-Version: 1.6.1
+Version: 1.6.9
 Release: 1%{?dist}
 Group: Development/Languages
 License: GPLv2+ or Ruby
 URL: http://highline.rubyforge.org
-Source0: http://gemcutter.orggems/%{gemname}-%{version}.gem
+Source0: http://rubygems.org/gems/%{gemname}-%{version}.gem
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 Requires: rubygems
 BuildRequires: rubygems
@@ -54,5 +54,9 @@ rm -rf %{buildroot}
 
 
 %changelog
+* Tue Sep 18 2012 Sergio Rubio <rubiojr@frameos.org> - 1.6.9-1
+- Fix Source0 URL
+- bumped version
+
 * Sun Dec 19 2010 Sergio Rubio <rubiojr@frameos.org> - 1.6.1-1
 - Initial package
